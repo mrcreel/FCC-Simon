@@ -1,0 +1,127 @@
+body {
+  background: #fafafa;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  color: #333;
+}
+.container {
+  max-width: 450px;
+  min-width: 200px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 6px;
+}
+.game {
+  display: grid;
+  width: 95%;
+  height: auto;
+  grid-template-columns: 2fr 3fr 3fr 2fr;
+  grid-template-rows: 2fr 3fr 3fr 2fr;
+}
+.layout {
+  grid-column: 1/5;
+  grid-row: 1/5;
+  border-radius: 100%;
+  padding-top: 100%;
+  background-color: black;
+}
+.quad{  
+  width:90%;
+  height:90%;
+}
+.quad--1{
+  margin-left:10%;
+  margin-top:10%;
+  grid-area: 1/1/3/3;
+  border-radius: 100% 0 0 0;
+  background-color: green;
+}
+
+.quad--2{
+  grid-area: 1/3/3/6;
+  margin-top:10%;
+  border-radius: 0 100% 0 0;
+  background-color: red;
+}
+
+.quad--3{
+  grid-area: 3/3/6/6;
+  border-radius: 0 0 100% 0;
+  background-color: blue;
+}
+
+.quad--4{
+  grid-area: 3/1/6/3;
+  margin-left:10%;
+  border-radius: 0 0 0 100%;
+  background-color: yellow;
+}
+.quad--1.selected{
+  background-color : lightgreen;
+}
+.quad--2.selected{
+  background-color : pink;
+}
+.quad--3.selected{
+  background-color : lightblue;
+}
+.quad--4.selected{
+  background-color : lightyellow;
+}
+.divider{
+  background-color: black;
+}
+.divider-horizontal{  
+  width: 5%;  
+  grid-area: 1/3/6/6;
+}
+.divider-horizontal_2{
+  width: 5%;  
+  grid-area: 1/1/6/3;
+  margin-left: auto;
+  margin-right: 0;
+}
+.divider-vertical{
+  height: 10%;
+  grid-area: 3/1/3/6;
+}
+.divider-vertical_2{
+  height: 5%;
+  grid-area: 1/1/3/6;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+.console{
+  background-color: black;
+  grid-area:2/2/4/4;
+  height: 100%;
+  border-radius:100%;
+}
+.display{
+  cursor: default;
+  pointer-events: none;
+  margin:auto;
+  margin-top: 15%;
+  font-size: 40px;
+  line-height:80px;
+  font-weight: bolder;
+  width:50%;
+  height: 30%;
+  background-color: orange;
+}
+.buttonPanel{
+  margin-top: 10%;
+  align-content: justify;
+}
+.btn{
+  font-size: 18px;
+  cursor:pointer;
+}
+.btnStart{
+  grid-area:2/2/4/4;
+}
+.btnStrict.selected{
+  background-color:green;
+}
